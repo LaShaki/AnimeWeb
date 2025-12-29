@@ -1,0 +1,588 @@
+
+/*360px → Móviles muy pequeños (iPhone SE)
+480px → Móviles estándar
+768px → Tablets y móviles grandes
+1024px → Tablets horizontales / portátiles pequeños
+1440px → Escritorios*/
+
+
+/* ============================
+   TABLETS Y MÓVILES GRANDES
+   (max-width: 768px)
+   ============================ */
+@media (max-width: 768px) {
+  
+  /* ========== ELEMENTOS COMUNES ========== */
+  
+  /* CABECERA (ambas páginas) */
+  #cabecera {
+    flex-direction: column !important; /*El !important es para sobreponerse sobre los flex principales de las hojas de estilo principales*/
+    height: auto !important;
+    padding: 15px !important;
+    gap: 15px !important;
+    align-items: center !important;
+  }
+  
+  .logo {
+    margin-left: 0 !important;
+    justify-content: center !important;
+    width: 100%;
+    gap: 15px !important;
+  }
+  
+  #gifSonrisa {
+    width: 80px !important;
+  }
+  
+  .animeShop {
+    font-size: 24px !important;
+    text-align: center;
+  }
+  
+  #contenedorElementos {
+    flex-direction: column !important;
+    margin-right: 0 !important;
+    gap: 12px !important;
+    width: 100%;
+    align-items: center !important;
+  }
+  
+  .elementoCabecera {
+    width: 100%;
+    justify-content: center !important;
+  }
+  
+  .btn-nav {
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px !important;
+    display: block;
+  }
+  
+  .botonVolver {
+    width: 100%;
+  }
+  
+  .botonVolver .btn-nav {
+    width: 100%;
+  }
+
+  /* FOOTER (ambas páginas) */
+  footer {
+    font-size: 14px !important;
+    padding: 20px 10px !important;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .footer-links a {
+    margin: 5px 0 !important;
+  }
+
+  /* ========== PÁGINA PRINCIPAL (WebAnime) ========== */
+  
+  /* Main */
+  main {
+    flex-direction: column !important;
+  }
+
+  /* Pantalla completa */
+  #pantallaCompleta {
+    background-size: cover !important;
+  }
+
+  /* TITULO PRINCIPAL */
+  #contenedorPantallaTitulo {
+    height: auto !important;
+  }
+  
+  #contenedorTitulo {
+    gap: 20px !important;
+    margin: 10px !important;
+    padding: 15px !important;
+  }
+  
+  .titulo {
+    width: 100% !important;
+  }
+  
+  .textoTitulo {
+    font-size: 32px !important;
+    margin: 15px 5px !important;
+  }
+  
+  .textoDescripcionTitulo {
+    font-size: 16px !important;
+    padding: 8px !important;
+  }
+  
+  #contenedorTitulo2 {
+    justify-content: center !important;
+  }
+  
+  .contenedorGifNewsletter {
+    width: 200px !important;
+    height: 200px !important;
+    margin: 10px !important;
+  }
+
+  /* SECCIÓN "MÁS QUE UNA TIENDA" Y NEWSLETTER */
+  #contenedorPantallaNews {
+    padding: 0 !important;
+  }
+  
+  #contenedorComunidadNews {
+    gap: 20px !important;
+    padding: 15px !important;
+    width: 100% !important;
+  }
+  
+  .masquetienda {
+    margin: 20px 10px !important;
+    padding: 15px !important;
+    width: calc(100% - 20px) !important;
+  }
+  
+  .h4Masquetienda {
+    font-size: 24px !important;
+    margin: 5px !important;
+  }
+  
+  .textoMasquetienda {
+    font-size: 14px !important;
+    padding: 8px !important;
+    margin: 5px !important;
+  }
+
+  /* NEWSLETTER */
+  .newsletter {
+    width: 90% !important;
+    margin: 20px auto !important;
+    padding: 20px 15px !important;
+    border-radius: 15px !important;
+  }
+  
+  .h2Newsletter {
+    font-size: 22px !important;
+    margin: 5px !important;
+  }
+  
+  .textoNewsletter {
+    font-size: 16px !important;
+    margin: 8px !important;
+  }
+  
+  .newsletter-form {
+    width: 100%;
+  }
+  
+  .form-group {
+    width: 100%;
+  }
+  
+  .form-group input {
+    font-size: 1rem !important;
+    padding: 12px !important;
+    width: 100%;
+  }
+  
+  .btn-submit {
+    width: 100%;
+    padding: 12px !important;
+  }
+
+  /* BOTONES DE PRODUCTOS */
+  #Productos {
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 15px 0 !important;
+  }
+  
+  .productoSudadera,
+  .productoTaza,
+  .productoPoster,
+  .productoFiguras {
+    margin: 12px !important;
+    width: 85% !important;
+    justify-content: center !important;
+    text-align: center;
+  }
+  
+  .linkSecciones {
+    justify-content: center !important;
+    font-size: 18px !important;
+    padding: 15px !important;
+    width: 100%;
+    display: block !important;
+  }
+
+  /* ARTÍCULOS */
+  #pantallaArticulos {
+    padding: 15px !important;
+  }
+  
+  .seccionArticulo {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 15px !important;
+  }
+  
+  .articulo {
+    width: 95% !important;
+    max-width: 400px;
+    margin: 10px 0 !important;
+  }
+  
+  .fotoArticulo {
+    height: 280px !important;
+    padding: 15px !important;
+    width: 100% !important;
+  }
+
+  /* ========== PÁGINA TRABAJA CON NOSOTROS ========== */
+  
+  /* Pantalla completa trabajo */
+  #pantallaCompletaTrabajo {
+    background-size: cover !important;
+  }
+
+  /* SECCIONES DE TRABAJO */
+  #pantallaTrabajo1 {
+    width: 100% !important;
+  }
+  
+  #seccionesTrabajo {
+    flex-direction: column !important;
+    margin: 30px 15px !important;
+    gap: 20px !important;
+    width: auto !important;
+  }
+  
+  .seccion {
+    border-radius: 15px !important;
+    padding: 20px !important;
+    margin: 10px 0 !important;
+    width: 100% !important;
+  }
+  
+  .h2Seccion {
+    font-size: 20px !important;
+    padding: 10px !important;
+    margin: 5px 0 !important;
+    text-align: center !important;
+  }
+  
+  .textoTrabajo {
+    font-size: 15px !important;
+    margin: 10px !important;
+    padding: 10px !important;
+  }
+
+  /* FORMULARIO DE EMPLEO */
+  #pantallaTrabajo2 {
+    width: 100% !important;
+    padding: 0 10px !important;
+  }
+  
+  #solicitudEmpleo {
+    width: 90% !important;
+    margin: 30px auto !important;
+    padding: 20px !important;
+    font-size: 20px !important;
+    border-radius: 15px !important;
+  }
+  
+  .h2Curriculum {
+    font-size: 22px !important;
+    text-align: center;
+  }
+  
+  .textoCurriculum {
+    font-size: 16px !important;
+    text-align: center;
+    margin: 10px 0 !important;
+  }
+  
+  .sobreti-form {
+    width: 100%;
+  }
+  
+  .form-sobreti {
+    padding: 10px 0 !important;
+  }
+  
+  .form-sobreti label {
+    font-size: 1rem !important;
+  }
+  
+  .form-sobreti input,
+  .form-sobreti textarea {
+    font-size: 1rem !important;
+    width: 100%;
+  }
+  
+  .form-sobreti textarea {
+    min-height: 120px !important;
+  }
+}
+
+/* ============================
+   MÓVILES PEQUEÑOS
+   (max-width: 480px)
+   ============================ */
+@media (max-width: 480px) {
+  
+  /* ========== ELEMENTOS COMUNES ========== */
+  
+  /* CABECERA */
+  #gifSonrisa {
+    width: 70px !important;
+  }
+  
+  .animeShop {
+    font-size: 20px !important;
+  }
+  
+  .btn-nav {
+    padding: 10px 15px !important;
+    font-size: 14px !important;
+  }
+
+  /* FOOTER */
+  footer {
+    font-size: 12px !important;
+    padding: 15px 8px !important;
+  }
+
+  /* ========== PÁGINA PRINCIPAL ========== */
+  
+  /* TITULO */
+  .textoTitulo {
+    font-size: 26px !important;
+    margin: 10px 5px !important;
+  }
+  
+  .textoDescripcionTitulo {
+    font-size: 14px !important;
+  }
+  
+  .contenedorGifNewsletter {
+    width: 160px !important;
+    height: 160px !important;
+  }
+
+  /* MÁS QUE UNA TIENDA */
+  .h4Masquetienda {
+    font-size: 20px !important;
+  }
+  
+  .textoMasquetienda {
+    font-size: 13px !important;
+  }
+
+  /* NEWSLETTER */
+  .newsletter {
+    width: 95% !important;
+    padding: 15px 10px !important;
+  }
+  
+  .h2Newsletter {
+    font-size: 20px !important;
+  }
+  
+  .textoNewsletter {
+    font-size: 14px !important;
+  }
+  
+  .form-group input {
+    font-size: 0.9rem !important;
+    padding: 10px !important;
+  }
+
+  /* PRODUCTOS */
+  .productoSudadera,
+  .productoTaza,
+  .productoPoster,
+  .productoFiguras {
+    width: 90% !important;
+  }
+  
+  .linkSecciones {
+    font-size: 16px !important;
+    padding: 12px !important;
+  }
+
+  /* ARTÍCULOS */
+  .articulo {
+    width: 100% !important;
+  }
+  
+  .fotoArticulo {
+    height: 240px !important;
+    padding: 10px !important;
+  }
+  
+  .articulo p {
+    font-size: 14px;
+  }
+
+  /* ========== PÁGINA TRABAJA CON NOSOTROS ========== */
+  
+  /* SECCIONES */
+  #seccionesTrabajo {
+    margin: 20px 10px !important;
+  }
+  
+  .seccion {
+    padding: 15px !important;
+  }
+  
+  .h2Seccion {
+    font-size: 18px !important;
+  }
+  
+  .textoTrabajo {
+    font-size: 14px !important;
+    margin: 8px !important;
+  }
+
+  /* FORMULARIO */
+  #solicitudEmpleo {
+    width: 95% !important;
+    margin: 20px auto !important;
+    padding: 15px !important;
+    font-size: 18px !important;
+  }
+  
+  .h2Curriculum {
+    font-size: 20px !important;
+  }
+  
+  .textoCurriculum {
+    font-size: 14px !important;
+  }
+  
+  .form-sobreti label {
+    font-size: 0.9rem !important;
+  }
+  
+  .form-sobreti input,
+  .form-sobreti textarea {
+    font-size: 0.9rem !important;
+    padding: 10px !important;
+  }
+  
+  .form-sobreti textarea {
+    min-height: 100px !important;
+  }
+  
+  .btn-submit {
+    font-size: 0.9rem !important;
+    padding: 10px !important;
+  }
+}
+
+/* ============================
+   MÓVILES MUY PEQUEÑOS
+   (max-width: 360px)
+   ============================ */
+@media (max-width: 360px) {
+  
+  /* CABECERA */
+  #gifSonrisa {
+    width: 60px !important;
+  }
+  
+  .animeShop {
+    font-size: 18px !important;
+  }
+  
+  .btn-nav {
+    font-size: 13px !important;
+    padding: 8px 12px !important;
+  }
+
+  /* PÁGINA PRINCIPAL */
+  .textoTitulo {
+    font-size: 22px !important;
+  }
+  
+  .textoDescripcionTitulo {
+    font-size: 13px !important;
+  }
+  
+  .contenedorGifNewsletter {
+    width: 140px !important;
+    height: 140px !important;
+  }
+  
+  .h2Newsletter {
+    font-size: 18px !important;
+  }
+  
+  .textoNewsletter {
+    font-size: 13px !important;
+  }
+  
+  .linkSecciones {
+    font-size: 14px !important;
+  }
+  
+  .fotoArticulo {
+    height: 200px !important;
+  }
+
+  /* PÁGINA TRABAJA */
+  .h2Seccion {
+    font-size: 16px !important;
+  }
+  
+  .textoTrabajo {
+    font-size: 13px !important;
+  }
+  
+  #solicitudEmpleo {
+    font-size: 16px !important;
+  }
+  
+  .h2Curriculum {
+    font-size: 18px !important;
+  }
+  
+  .textoCurriculum {
+    font-size: 13px !important;
+  }
+}
+
+/* ============================
+   TABLETS HORIZONTALES
+   (min-width: 769px) AND (max-width: 1024px)
+   ============================ */
+@media (min-width: 769px) and (max-width: 1024px) {
+  
+  /* Ajustes suaves para tablets */
+  .textoTitulo {
+    font-size: 48px !important;
+  }
+  
+  #seccionesTrabajo {
+    margin: 60px !important;
+  }
+  
+  .seccion {
+    padding: 25px !important;
+  }
+  
+  #solicitudEmpleo {
+    width: 60% !important;
+  }
+  
+  .articulo {
+    width: 45% !important;
+  }
+}
