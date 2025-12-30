@@ -90,7 +90,7 @@ html {
     font-size: 20px;
 }
 
-/*BOTONES!!!*/
+/*BOTONES CABECERA!!!*/
 nav{
     display: flex;
 }
@@ -316,7 +316,7 @@ margin: 20px;;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color:#70190a;
+    background: linear-gradient(to bottom, rgb(238, 156, 4), rgb(68, 8, 207));
 }
 
 .linkSecciones{
@@ -332,27 +332,27 @@ margin: 20px;;
 .productoSudadera{
     display:flex;
     margin: 30px;
-    background-color: #f75700;
+    background-color: #62057488;
     border-radius: 10%;
 }
 .productoTaza{
     display: flex;
     margin: 30px;
-    background-color: #f75700;
+    background-color: #62057488;
     border-radius: 10%;
 
 }
 .productoPoster{
     display: flex;
     margin:30px;
-    background-color: #f75700;
+    background-color: #62057488;
     border-radius: 10%;
 
 }
 .productoFiguras{
     display: flex;
     margin: 30px;
-    background-color: #f75700;
+    background-color: #62057488;
     border-radius: 10%;
 
 }
@@ -375,18 +375,28 @@ margin: 20px;;
     justify-content: center;
     gap:10px;
 }
+.nav-Art{
+    display: flex;
+    justify-content: center;
+    
+}
+.btn-art{
+    display: flex;
+    justify-content: center;
+    color:#1d1d1d;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
+}
 .articulo{
     display:flex;
     flex-direction: column;
     height: 100%;
     width: 350px;  /*Para que todos tengan el mismo ancho*/
     background-color: rgba(226, 182, 101, 0.501);
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     text-decoration: underline;
     margin: 20px;
-    padding: 10px;
+    padding:10px;
 }
 
 .fotoArticulo{
@@ -416,5 +426,6 @@ color: #ffb3b3;
 margin: 0 10px;
 text-decoration: none;
 }
+
 
 
