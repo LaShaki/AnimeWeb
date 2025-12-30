@@ -386,6 +386,7 @@ margin: 20px;;
     text-align: center;
     text-decoration: underline;
     margin: 20px;
+    padding: 10px;
 }
 
 .fotoArticulo{
@@ -415,4 +416,5 @@ color: #ffb3b3;
 margin: 0 10px;
 text-decoration: none;
 }
+
 
